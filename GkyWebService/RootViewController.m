@@ -39,16 +39,16 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [UIView animateWithDuration:0.0f
-                     animations:^{
-                         [self.view setTransform: CGAffineTransformMakeRotation(M_PI / 2)];
-                         if (iPhone5) {
-                             self.view.frame = CGRectMake(0, 0, 568, 320);
-                         }
-                         else{
-                             self.view.frame = CGRectMake(0, 0, 480, 320);
-                         }
-                     }];
+//    [UIView animateWithDuration:0.0f
+//                     animations:^{
+//                         [self.view setTransform: CGAffineTransformMakeRotation(M_PI / 2)];
+//                         if (iPhone5) {
+//                             self.view.frame = CGRectMake(0, 0, 568, 320);
+//                         }
+//                         else{
+//                             self.view.frame = CGRectMake(0, 0, 480, 320);
+//                         }
+//                     }];
 }
 
 - (void)viewDidLoad
@@ -96,13 +96,7 @@
    
 }
 
--(BOOL)shouldAutorotate{
-    return YES;
-}
 
-- (NSUInteger)supportedInterfaceOrientations{
-    return UIInterfaceOrientationMaskAll;
-}
 
 
 
@@ -113,9 +107,5 @@
     // Release any retained subviews of the main view.
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return YES;
-}
 
 @end

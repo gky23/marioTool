@@ -57,18 +57,10 @@
 }
 
 
--(BOOL)shouldAutorotate{
-    return YES;
-}
 
-- (NSUInteger)supportedInterfaceOrientations{
-    return UIInterfaceOrientationMaskLandscape;
-}
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return YES;
-}
+
+
 
 - (void)viewDidLoad
 {
